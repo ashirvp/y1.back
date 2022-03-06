@@ -1,15 +1,28 @@
 #include <iostream>
-int main(){
+#include <iomanip>
+using namespace std;
 
-enum gender{male,femail};
-gender=male;
-
-switch (gender)
+int main()
 {
-    case male:
-    
+    enum Gender
+    {
+        male,
+        femail
+    };
+    Gender gender;
+    gender = male;
 
-}
+    switch (gender)
+    {
+    case male:
+        cout << "male";
+        break;
+    case femail:
+        cout << "femail";
+        break;
+    default:
+        cout << "trans";
+    }
 
     return 0;
 }
